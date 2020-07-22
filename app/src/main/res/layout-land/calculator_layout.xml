@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calculator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculatorScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A6AEDD"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F69790">
+
+            <Button
+                android:id="@+id/EmptyButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:clickable="false" />
+
+            <Button
+                android:id="@+id/signButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sign_button"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/DeleteButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sevenButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:outlineAmbientShadowColor="#070707"
+                android:text="@string/seven_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/eightButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/eight_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/nineButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/nine_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/divisionButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#453E3E"
+                android:text="@string/division_sign"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fourButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:outlineAmbientShadowColor="#070707"
+                android:text="@string/four_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/fiveButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/five_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/sixButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/six_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/timesButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#453E3E"
+                android:text="@string/time_sign"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/oneButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:outlineAmbientShadowColor="#070707"
+                android:text="@string/one_number"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/twoButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/two_number"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/threeButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/three_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/minusButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#453E3E"
+                android:text="@string/minus_sign"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/dotButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:outlineAmbientShadowColor="#070707"
+                android:text="@string/dot_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/zeroButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/zero_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/equalButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#817979"
+                android:text="@string/equal_sign"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/plusButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#453E3E"
+                android:text="@string/plus_sign"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

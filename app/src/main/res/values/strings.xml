@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="delete">DELETE</string>
+    <string name="division_sign">÷</string>
+    <string name="time_sign">×</string>
+    <string name="two_number">2</string>
+    <string name="one_number">1</string>
+    <string name="seven_sign">7</string>
+    <string name="eight_sign">8</string>
+    <string name="four_sign">4</string>
+    <string name="five_sign">5</string>
+    <string name="six_sign">6</string>
+    <string name="three_sign">3</string>
+    <string name="minus_sign">-</string>
+    <string name="dot_sign">.</string>
+    <string name="plus_sign">+</string>
+    <string name="equal_sign">=</string>
+    <string name="zero_sign">0</string>
+    <string name="nine_sign">9</string>
+    <string name="sign_button">+/-</string>
+    <string name="division_failure">Can\'t Divide by Zero</string>
+
+
+</resources>
