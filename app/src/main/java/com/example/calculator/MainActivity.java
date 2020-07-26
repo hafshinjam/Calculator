@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String DECIMAL_POINT_FLAG = "com.example.calculator.decimalPointFlag";
     public static final String DOT_USED_FLAG = "com.example.calculator.dotUsedFLag";
     public static final String SIGN_FLAG = "com.example.calculator.signFlag";
+    private String OPERATION_SAVED = "com.example.calculator.operation";
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putBoolean(DECIMAL_POINT_FLAG, mDecimalPointFlag);
         outState.putBoolean(DOT_USED_FLAG, mDotUsed);
         outState.putBoolean(SIGN_FLAG, mSign);
+        outState.putString(OPERATION_SAVED, mOperation);
     }
 
     @Override
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             mDotUsed = savedInstanceState.getBoolean(DOT_USED_FLAG);
             mSign = savedInstanceState.getBoolean(SIGN_FLAG);
             mCalculatorScreen.setText(mOperationShowText);
+            mOperation = savedInstanceState.getString(OPERATION_SAVED);
         }
         setOnClickListeners();
 
